@@ -12,9 +12,9 @@ In case of use for research, please cite us.
 
 The code simulate the following causal network, path coefficients are easy to change, for different causal networks major modifications are required, including tables and dataframes.
 
-![](images/network.jpg){width="255"}
+![](images/network.jpg){width="180"}
 
-## [User customization]{.underline}
+## [User customization]
 
 L49: Define working directory, BLUPF90 executables and files must be in this folder.
 
