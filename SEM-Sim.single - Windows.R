@@ -20,7 +20,7 @@
 #
 #   THERE IS NO WARRANTY THAT THE PROGRAM IS ERROR FREE. COMMENTS ARE WELCOME.
 #   
-#   For user documentation please go to readme file
+#   For user documentation please go to README markdown file
 #
 # ------------------------------------------------------------------------------------
 
