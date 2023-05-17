@@ -48,7 +48,7 @@ L60: Parameter file for RENUMF90 for equivalent MTM for SEM estimations
 
 L67: Simulation seed.
 
-L72 to L80: Population structure. $NVAC$x$PREPOSH$ and $NTOR$x$PREPOSM$ must be integer.
+L72 to L80: Population structure. $NVAC$ * $PREPOSH$ and $NTOR$ * $PREPOSM$ must be integer.
 
 L86: S2U: Additive covariance structure for simulation in matrix format.
 
