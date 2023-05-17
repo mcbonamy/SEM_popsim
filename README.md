@@ -28,36 +28,36 @@ Parameter files are used in simulation:
 Code available:  
 - `SEM-Sim.single - Windows.R` for simulation a single replicate with a known simulation seed using windows store values for single individuals
 
+## User customization - Single replicate
+
 **If you are running on Linux system make the following changes**
-In section `RUN RENUMF90 AND BLUPF90` in *lines 517 - 518; lines 713 - 714; lines 801 - 802 and lines 1005 - 1006*:    
+In section `RUN RENUMF90 AND BLUPF90` in *lines 518 - 519; lines 714 - 715; lines 802 - 803 and lines 1006 - 1007*:    
 - Replace `system(command = "renumf90.exe", input = MTM.par)` by `system(command = "./renumf90", input = MTM.par)` 
 - Replace `system(command = "blupf90.exe", input = MTM.par)` by `system(command = "echo renf90.par | ./blupf90")`
 
-## User customization - Single replicate
+L50: Define working directory, BLUPF90 executables and files must be in this folder.
 
-L49: Define working directory, BLUPF90 executables and files must be in this folder.
+L53: Define storage directory. Output files will be saved in this folder.
 
-L52: Define storage directory. Output files will be saved in this folder.
+L56: Parameter file for RENUMF90 used for MTM
 
-L55: Parameter file for RENUMF90 used for MTM
-
-L59: Parameter file for RENUMF90 for equivalent MTM for SEM estimations
+L60: Parameter file for RENUMF90 for equivalent MTM for SEM estimations
 
 *Parameter files could be the same if the variance parameters are the same between models.*  
 *If you want to use estimated parameters these parameters could be different (by error of estimation).*
 
-L66: Simulation seed.
+L67: Simulation seed.
 
-L71 to L79: Population structure. $NVAC$x$PREPOSH$ and $NTOR$x$PREPOSM$ must be integer.
+L72 to L80: Population structure. $NVAC$x$PREPOSH$ and $NTOR$x$PREPOSM$ must be integer.
 
-L85: S2U: Additive covariance structure for simulation in matrix format.
+L86: S2U: Additive covariance structure for simulation in matrix format.
 
-L93: S2E: Residual covariance structure for simmulation in matrix format
+L94: S2E: Residual covariance structure for simmulation in matrix format
 
-L101: LAMBDA: Causal structure for simulation in matrix format. For non reciprocal relations the matrix resultant is lower diagonal. Read as row is caused by column.
+L102: LAMBDA: Causal structure for simulation in matrix format. For non reciprocal relations the matrix resultant is lower diagonal. Read as row is caused by column.
 
-L127: LAMBDA.e: Causal structure for estimation in matrix format. Used for backsolving EBVs, if the process is executed with all known parameters $LAMBDA=LAMBDA.e$.
+L128: LAMBDA.e: Causal structure for estimation in matrix format. Used for backsolving EBVs, if the process is executed with all known parameters $LAMBDA=LAMBDA.e$.
 
 *After run BLOCK I the matrix for the equivalent model are printed in the console, if you are running the estimations using known parameters these matrix must be used for BLUPF90. Check in RENUMF90 parameter files.*
 
-L546; L583; L837; L875: in `slice_max(EBV#` state the EBV used for selection in format "`EBV#`" (i.e. EBV1, EBV2, ....., EBV5)
+L547; L584; L838; L876: in `slice_max(EBV#` state the EBV used for selection in format "`EBV#`" (i.e. EBV1, EBV2, ....., EBV5)
