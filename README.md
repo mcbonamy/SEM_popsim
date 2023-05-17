@@ -21,6 +21,11 @@ Can be downloaded from http://nce.ads.uga.edu/html/projects/programs/
 Parameter files are used in simulation:  
 - `RENUMF90_for_diagonal.par` for diagonal covariances  
 - `RENUMF90_for_nodiagonal.par` for no diagonal covariances
+  
+Code available:  
+- `SEM-Sim.single - Windows.R` for simulation a single replicate with a known simulation seed using windows store values for single individuals
+- `SEM-Sim.single - Linux.R` for simulation a single replicate with a known simulation seed using linux store values for single individuals
+- `SEM-Sim.multi - Linux.R` for simulation a multiple replicate with a known simulation seed using linux store means for replicate by generation
 
 ## [User customization]
 
