@@ -16,7 +16,10 @@ The code simulate the following causal network, path coefficients are easy to ch
 
 ### Use of BLUPF90
 During simulations RENUMF90 and BLUPF90 executables are required (Animal breeding and genetic group, University of Georgia).   
-Can be downloaded from http://nce.ads.uga.edu/html/projects/programs/
+Can be downloaded from http://nce.ads.uga.edu/html/projects/programs/.  
+The files names mut be:
+- `renumf90.exe` and `blupf90.exe` if you run in windows
+- `renumf90` and `blupf90` if you run in linux
   
 Parameter files are used in simulation:  
 - `RENUMF90_for_diagonal.par` for diagonal covariances  
@@ -24,8 +27,11 @@ Parameter files are used in simulation:
   
 Code available:  
 - `SEM-Sim.single - Windows.R` for simulation a single replicate with a known simulation seed using windows store values for single individuals
-- `SEM-Sim.single - Linux.R` for simulation a single replicate with a known simulation seed using linux store values for single individuals
-- `SEM-Sim.multi - Linux.R` for simulation a multiple replicate with a known simulation seed using linux store means for replicate by generation
+
+**If you are running on Linux system make the following changes**
+In section `RUN RENUMF90 AND BLUPF90` in *lines 517 - 518; lines 713 - 714; lines 801 - 802 and lines 1005 - 1006*:    
+- Replace `system(command = "renumf90.exe", input = MTM.par)` by `system(command = "./renumf90", input = MTM.par)` 
+- Replace `system(command = "blupf90.exe", input = MTM.par)` by `system(command = "echo renf90.par | ./blupf90")`
 
 ## [User customization]
 
@@ -41,7 +47,7 @@ L59: Parameter file for RENUMF90 for equivalent MTM for SEM estimations
 
 L66: Simulation seed.
 
-L71 to L79: Population structure. $NVAC*PREPOSH$ and $NTOR*PREPOSM$ must be integer.
+L71 to L79: Population structure. $NVACxPREPOSH$ and $NTORxPREPOSM$ must be integer.
 
 L85: S2U: Additive covariance structure for simulation in matrix format.
 
