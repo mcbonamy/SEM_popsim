@@ -28,7 +28,7 @@ Parameter files are used in simulation:
 Code available:  
 - `SEM-Sim.single - Windows.R` for simulation a single replicate with a known simulation seed using windows store values for single individuals
 
-## User customization - Single replicate
+## User customization - Single replicate - SEM-Sim.single - Windows.R
 
 **If you are running on Linux system make the following changes**
 In section `RUN RENUMF90 AND BLUPF90` in   
