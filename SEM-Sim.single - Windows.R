@@ -1,5 +1,6 @@
 #----------------------------------------------------#
 #   Population simulator for causal related traits   #
+#   SINGLE REPLICATE                                 #
 #   Last UPDATE: May 2023                            #
 #   Bonamy Martin - La Plata University              #
 #----------------------------------------------------#
