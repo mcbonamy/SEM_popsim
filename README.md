@@ -12,7 +12,7 @@ In case of use for research, please cite us.
 
 The code simulate the following causal network, path coefficients are easy to change, for different causal networks major modifications are required, including tables and dataframes.
 
-![](images/network.jpg)
+![](images/network.jpg width = 100)
 
 ## [User customization]
 
