@@ -706,8 +706,8 @@
       write.table(REGISTROS.MTM[,c(1:3)], file = "PED.txt", sep = " ", row.names = F, col.names = F) # Pedigree
       write.table(REGISTROS.MTM[,c(1,4:16)], file = "DATOS.txt", sep = " ", row.names = F, col.names = F) # Data
       
-#     CALL BLUPF90        
-#     ------------
+#     RUN RENUMF90 AND BLUPF90        
+#     ------------------------
       
 #     WINDOWS      
       system(command = "renumf90.exe", input = MTM.par)
@@ -794,8 +794,8 @@
       write.table(REGISTROS.SEM[,c(1:3)], file = "PED.txt", sep = " ", row.names = F, col.names = F) # Pedigree
       write.table(REGISTROS.SEM[,c(1,4:16)], file = "DATOS.txt", sep = " ", row.names = F, col.names = F) # Datos
         
-#     CALL BLUPF90        
-#     ------------
+#     RUN RENUMF90 AND BLUPF90        
+#     ------------------------
       
 #     WINDOWS      
       system(command = "renumf90.exe", input = SEM.par)
@@ -998,8 +998,8 @@
       write.table(REGISTROS.SEM[,c(1:3)], file = "PED.txt", sep = " ", row.names = F, col.names = F) # Pedigree
       write.table(REGISTROS.SEM[,c(1,4:16)], file = "DATOS.txt", sep = " ", row.names = F, col.names = F) # Data
       
-#     CALL BLUPF90        
-#     ------------
+#     RUN RENUMF90 AND BLUPF90        
+#     ------------------------
       
 #     WINDOWS      
       system(command = "renumf90.exe", input = SEM.par)
