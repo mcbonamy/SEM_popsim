@@ -4,7 +4,7 @@
 
 ### Considerations
 
-The code is free to use and modification.
+The code is free to use and modification, parameters loaded by default are used by the authors.
 
 In case of use for research, please cite us.
 
@@ -33,7 +33,7 @@ In section `RUN RENUMF90 AND BLUPF90` in *lines 517 - 518; lines 713 - 714; line
 - Replace `system(command = "renumf90.exe", input = MTM.par)` by `system(command = "./renumf90", input = MTM.par)` 
 - Replace `system(command = "blupf90.exe", input = MTM.par)` by `system(command = "echo renf90.par | ./blupf90")`
 
-## [User customization]
+## User customization - Single replicate
 
 L49: Define working directory, BLUPF90 executables and files must be in this folder.
 
@@ -43,11 +43,12 @@ L55: Parameter file for RENUMF90 used for MTM
 
 L59: Parameter file for RENUMF90 for equivalent MTM for SEM estimations
 
-*Parameter files could be the same if the variance parameters are the same between models. If you want to use estimated parameters these parameters could be different (by error of estimation).*
+*Parameter files could be the same if the variance parameters are the same between models.*  
+*If you want to use estimated parameters these parameters could be different (by error of estimation).*
 
 L66: Simulation seed.
 
-L71 to L79: Population structure. $NVACxPREPOSH$ and $NTORxPREPOSM$ must be integer.
+L71 to L79: Population structure. $NVAC$x$PREPOSH$ and $NTOR$x$PREPOSM$ must be integer.
 
 L85: S2U: Additive covariance structure for simulation in matrix format.
 
