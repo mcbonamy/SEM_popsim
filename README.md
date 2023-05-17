@@ -14,6 +14,9 @@ The code simulate the following causal network, path coefficients are easy to ch
 
 <img src='images/network.jpg' width='200'>
 
+### Use of BLUPF90
+During simulations RENUMF90 and BLUPF90 executables are required, can be downloaded from http://nce.ads.uga.edu/html/projects/programs/
+
 ## [User customization]
 
 L49: Define working directory, BLUPF90 executables and files must be in this folder.
@@ -25,8 +28,8 @@ L55: Parameter file for RENUMF90 used for MTM
 L59: Parameter file for RENUMF90 for equivalent MTM for SEM estimations
 
 *Parameter files could be the same if the variance parameters are the same between models. If you want to use estimated parameters these parameters could be different (by error of estimation).*
-Paremeter file for RENUMF90 used in simulation are provided
-`RENUMF90_for_diagonal.par` for diagonal covariances
+Paremeter file for RENUMF90 used in simulation are provided  
+`RENUMF90_for_diagonal.par` for diagonal covariances  
 `RENUMF90_for_nodiagonal.par` for no diagonal covariances
 
 L66: Simulation seed.
