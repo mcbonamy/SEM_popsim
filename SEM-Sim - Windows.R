@@ -63,7 +63,7 @@
       
 #     Random number generator
 #     -----------------------
-      semilla <- 12344321     # Seed number
+      semilla <- 34145     # Seed number
       set.seed(semilla)
 
 #     Population strucutre
