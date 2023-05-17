@@ -18,7 +18,7 @@ The code simulate the following causal network, path coefficients are easy to ch
 During simulations RENUMF90 and BLUPF90 executables are required (Animal breeding and genetic group, University of Georgia).   
 Can be downloaded from http://nce.ads.uga.edu/html/projects/programs/
   
-Parameter files are provided:  
+Parameter files are used in simulation:  
 - `RENUMF90_for_diagonal.par` for diagonal covariances  
 - `RENUMF90_for_nodiagonal.par` for no diagonal covariances
 
