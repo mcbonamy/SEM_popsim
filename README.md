@@ -39,9 +39,9 @@ In section `RUN RENUMF90 AND BLUPF90` in
 OUTPUT of execution:
 - **REGISTROS_base.txt** - Generations without selection, by default 6 (base + 5 random mating generations)
 - **REGISTROS_MTM_L** and **REGISTROS_SEM_L**: animals simulated in long format, each phenotipic record in a single row
-      - Layout: ID; SIRE (as PAD); DAM (as MAD); GENERATION (as GEN); SEX (as SEX); HERD (as ROD); TRAIT (as Trait); TRUE BREEDING VALUE (as BV); Y; EBV. 
+      - Columns: ID; SIRE (as PAD); DAM (as MAD); GENERATION (as GEN); SEX (as SEX); HERD (as ROD); TRAIT (as Trait); TRUE BREEDING VALUE (as BV); Y; EBV. 
 - **REGISTROS_MTM_W** and **REGISTROS_SEM_W**: animals simulated in wide format, each animal in a single row
-      - Layout: ID; SIRE (as PAD); DAM (as MAD); GENERATION (as GEN); SEX (as SEX); HERD (as ROD); five columns for TRUE BREEDING VALUE (as BV_#); five columns for Y (as Y_#); five columns for EBV (as EBV_#). 
+      - Columns: ID; SIRE (as PAD); DAM (as MAD); GENERATION (as GEN); SEX (as SEX); HERD (as ROD); five columns for TRUE BREEDING VALUE (as BV_#); five columns for Y (as Y_#); five columns for EBV (as EBV_#). 
 
 **PARAMETERS TO CHECK BEFORE RUNNING**
 L50: Define working directory, BLUPF90 executables and files must be in this folder.
@@ -82,11 +82,11 @@ In section `RUN RENUMF90 AND BLUPF90` in
 OUTPUT of execution:
 - **REGISTROS_base.txt** - Generations without selection, by default 6 (base + 5 random mating generations)
 - **REGISTROS_MTM_L** and **REGISTROS_SEM_L**: animals simulated in long format, each phenotipic record in a single row for last simulation
-      - Layout: ID; SIRE (as PAD); DAM (as MAD); GENERATION (as GEN); SEX (as SEX); HERD (as ROD); TRAIT (as Trait); TRUE BREEDING VALUE (as BV); Y; EBV. 
+      - Columns: ID; SIRE (as PAD); DAM (as MAD); GENERATION (as GEN); SEX (as SEX); HERD (as ROD); TRAIT (as Trait); TRUE BREEDING VALUE (as BV); Y; EBV. 
 - **REGISTROS_MTM_W** and **REGISTROS_SEM_W**: animals simulated in wide format, each animal in a single row for last simulation
-      - Layout: ID; SIRE (as PAD); DAM (as MAD); GENERATION (as GEN); SEX (as SEX); HERD (as ROD); five columns for TRUE BREEDING VALUE (as BV_#); five columns for Y (as Y_#); five columns for EBV (as EBV_#).
+      - Columns: ID; SIRE (as PAD); DAM (as MAD); GENERATION (as GEN); SEX (as SEX); HERD (as ROD); five columns for TRUE BREEDING VALUE (as BV_#); five columns for Y (as Y_#); five columns for EBV (as EBV_#).
 - **RTA_SEL**: means for each trait by generation for all replicates
-      - Layout: METHOD (as MET); SEED; TRAIT UNDER SELECTION (as TR.SEL); GENERATION (as GEN); RESPONSE TRAIT (as TR.RTA); Y; TRUE BREEDING VALUE (as TBV); EBV. 
+      - Columns: METHOD (as MET); SEED; TRAIT UNDER SELECTION (as TR.SEL); GENERATION (as GEN); RESPONSE TRAIT (as TR.RTA); Y; TRUE BREEDING VALUE (as TBV); EBV. 
 
 **PARAMETERS TO CHECK BEFORE RUNNING**
 L50: Define working directory, BLUPF90 executables and files must be in this folder.
