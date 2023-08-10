@@ -171,8 +171,8 @@
 #   Iteration for n replicates    
     {
       for (repet in 1:nrep) {
-        
         semilla <- semilla+(repet*27) # Update seed
+        set.seed(semilla)
 
 # --------------------  
 # BASE GENERATION (G1)
